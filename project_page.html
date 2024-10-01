@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1c1c1c, #3c3c3c);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #333;
+            padding: 15px 0; 
+            text-align: center;
+            margin-bottom: 30px; 
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px 0;
+        }
+
+        .card {
+            background-color: #222;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .image-container {
+            width: 100%;
+            height: 180px;
+            background-color: #000;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .technologies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .technologies span {
+            background-color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .view {
+            background-color: #28a745; 
+            color: white;
+        }
+
+        .buttons a:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a img:hover {
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="ports.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+    
+    <h1>My Project Portfolio</h1>
+    <div class="portfolio">
+        <div class="card">
+            <div class="image-container">
+                <img src="C:\Users\PRANAV SAI\Downloads\WhatsApp Image 2024-09-29 at 01.05.45.jpeg" alt="Project 1">
+            </div>
+            <div class="content">
+                <h2>MEDITECH</h2>
+                <p>Making superadmin work easier to provide policies to patients.</p>
+                <div class="technologies">
+                    <span>React</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Python(Flask)</span>
+                    <span>NodeJs</span>
+                    <span>MySQL</span>
+                </div>
+                <div class="buttons">
+                    <a href="https://github.com/pranavsaai/MEDITECH" class="view">View</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src="C:\Users\PRANAV SAI\OneDrive\Pictures\Screenshots\111111.png" alt="Project 2">
+            </div>
+            <div class="content">
+                <h2>COLAB</h2>
+                <p>Providing resource-sharing platform for students and faculty from various universities.</p>
+                <div class="technologies">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                    <span>Google Sites</span>
+                    <span>Python</span>
+                </div>
+                <div class="buttons">
+                    <a href="https://sites.google.com/d/11F1sbR4tFTQhc9dk378tfdhqwilRLXCV/p/17hxYBRBRVO3NZIKGEn7h8T7eq_Tt00fw/edit" class="view">View</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src="C:\Users\PRANAV SAI\OneDrive\Pictures\Screenshots\Screenshot 2024-09-29 011746.png" alt="Project 3">
+            </div>
+            <div class="content">
+                <h2>Follow Me</h2>
+                <p>Provides up-to-date info about weather conditions and alternative routes.</p>
+                <div class="technologies">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Python</span>
+                    <span>MySQL</span>
+                    <span>Node.js</span>
+                </div>
+                <div class="buttons">
+                    <a href="https://github.com/pranavsaai/Traffic-flow" class="view">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/sizzu_2004/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/pranav-sai-4343ab248/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/pranavsaai" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
